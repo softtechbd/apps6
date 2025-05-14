@@ -1,0 +1,281 @@
+
+@font-face {
+    font-family: kalpurush;
+    src: url(font/kalpurush.woff);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f8c46b, #f1d08e);
+    min-height: 100vh;
+    padding: 50px 0px;
+    min-width: 100%;
+    font-family: kalpurush;
+}
+
+
+/* -------- Header -------- */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    width: 100%;
+    font-family: kalpurush;
+}
+
+
+/* -------- Search Box -------- */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    max-width: 300px;
+    background: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    font-family: kalpurush;
+}
+
+.search-container input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    font-size: 20px;
+    border-radius: 50px;
+    flex: 1;
+    font-family: kalpurush;
+}
+
+.search-container button {
+    background: #5a2515;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background: #5a2515;
+}
+
+.search-container i {
+    font-size: 18px;
+}
+
+/* -------- Student List Grid -------- */
+#studentList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* প্রতি রো-তে ২টা কলাম */
+    gap: 30px;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+/* -------- Student Card -------- */
+.card {
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    padding: 10px 10px; /* padding কমানো হয়েছে */
+    border: 2px solid #7d0a0a;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100px !important; /* আরও বড় ছবি */
+    height: 100px !important;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18); /* আরও deep shadow */
+}
+
+.card h3 {
+    margin: 10px 0 6px;
+    font-size: 24px; /* আরও বড় নাম */
+    font-weight: 700;
+    color: #5a2b0e;
+    font-family: kalpurush;
+}
+
+.card p {
+    margin: 0;
+    font-size: 24px; /* description ও বড় */
+    color: #240e0e;
+    line-height: 1.6;
+    font-family: kalpurush;
+}
+
+
+/* -------- Student Details Page -------- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.student-card {
+    max-width: 70%;
+    width: 90%;
+    margin: 50px auto;
+    padding: 30px 0px;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid #7d0a0a;
+}
+
+.student-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.student-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #891c10;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease;
+}
+
+.student-card img:hover {
+    border-color: #e8580a;
+}
+
+.student-card h2 {
+    font-size: 40px;
+    color: #741010;
+    margin-bottom: 2px;
+    margin-top: -10px;
+    font-family: kalpurush;
+}
+
+.student-card p {
+    font-size: 24px;
+    color: #555;
+    margin: 6px 0;
+    line-height: 1.5;
+    font-family: kalpurush;
+}
+
+.student-card p span {
+    font-weight: bold;
+    color: #222;
+    font-family: kalpurush;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .student-card {
+        padding: 30px 20px;
+    }
+
+    .student-card h2 {
+        font-size: 22px;
+    }
+
+    .student-card p {
+        font-size: 15px;
+    }
+}
+
+
+/* -------- Call Button -------- */
+.call-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #731a0e;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.call-button:hover {
+    background-color: #45a049;
+}
+
+/* -------- Footer -------- */
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #555;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #5c1414;
+    font-size: 3rem;
+    font-family: kalpurush;
+}
+
+
+
+/* Preloader Styles */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-container .logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+
+/* -------- Responsive Design -------- */
+@media (max-width: 600px) {
+    .search-container input {
+        width: 80%;
+    }
+}
+
+.ds {
+    overflow-x: hidden;  /* অনুভূমিক স্ক্রল বন্ধ */
+    overflow-y: auto;
+}
+
+
+
+
+
+
+
+
